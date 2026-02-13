@@ -40,10 +40,9 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <h1>hello demo</h1>
-      {/* <GLBViewer /> */}
-    </div>
+    // <div className="app-container">
+    <h1>hello demo</h1>
+    // </div>
   );
 }
 

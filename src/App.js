@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Scene from "./components/Scene";
-import RoomSelector from "./components/RoomSelector";
 import { products, groutSizes, groutColors } from "./data/roomData";
 import GLBViewer from "./components/GLBViewer";
 
@@ -46,48 +42,6 @@ function App() {
   return (
     <div className="app-container">
       <GLBViewer />
-      {/* <Header
-        onSelectRoom={() => setShowRoomSelector(true)}
-        onSaveDesign={handleSaveDesign}
-        onReset={handleReset}
-      /> */}
-
-      {/* <Sidebar
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-        selectedProduct={selectedProduct}
-        setSelectedProduct={setSelectedProduct}
-        selectedObject={selectedObject}
-        setSelectedObject={setSelectedObject}
-        layoutPattern={layoutPattern}
-        setLayoutPattern={setLayoutPattern}
-        angle={angle}
-        setAngle={setAngle}
-        groutSize={groutSize}
-        setGroutSize={setGroutSize}
-        groutColor={groutColor}
-        setGroutColor={setGroutColor}
-        isCollapsed={isCollapsed}
-        setIsCollapsed={setIsCollapsed}
-      /> */}
-
-      {/* <Scene
-        roomModel={roomModel}
-        selectedObject={selectedObject}
-        selectedProduct={selectedProduct}
-        layoutPattern={layoutPattern}
-        angle={angle}
-        groutSize={groutSize}
-        groutColor={groutColor}
-        onObjectClick={handleObjectClick}
-      /> */}
-      {/* 
-      <RoomSelector
-        isOpen={showRoomSelector}
-        onClose={() => setShowRoomSelector(false)}
-        onSelectRoom={setRoomModel}
-        currentRoom={roomModel}
-      /> */}
     </div>
   );
 }
